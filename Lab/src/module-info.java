@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author rafae
- *
- */
-module Lab {
-}
