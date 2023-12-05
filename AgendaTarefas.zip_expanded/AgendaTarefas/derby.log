@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Tue Dec 05 13:35:01 WET 2023:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.16.1.1 - (1901046): instance a816c00e-018c-3a30-6df4-00000ebed1a0 
+on database directory C:\aulas23_24\Laboratorios\projeto12011001 with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0 
+Loaded from file:/C:/Users/rafae/OneDrive/Ambiente%20de%20Trabalho/workspaceDeus/AgendaTarefas.zip_expanded/AgendaTarefas/Lib/derby.jar
+java.vendor=Eclipse Adoptium
+java.runtime.version=17.0.7+7
+user.dir=C:\Users\rafae\OneDrive\Ambiente de Trabalho\workspaceDeus\AgendaTarefas.zip_expanded\AgendaTarefas
+os.name=Windows 11
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
