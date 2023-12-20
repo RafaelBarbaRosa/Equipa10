@@ -44,8 +44,71 @@ public class TarefaService {
    public TarefaService(EntityManager em) {
        this.em = em;
    } 
+   
+   public void atribuirUtilizadorTarefa(Utilizador u, Tarefa t) {
+	   em.getTransaction().begin(); u.getTarefas().add(t);
+	   em.getTransaction().commit();
+   }
+   
+   public Tarefa addTarefa(String titulo, String descricao, String dataConclusao, String prioridade) {
+	   EntityManager em = getEM();
+	   
+	   try {
+		   Tarefa t = em.find(Tarefa.class, titulo);
+		   if(t == null) {
+			   t = new Tarefa();
+			   t.setTitulo(titulo);
+		   }
+		   
+		   t.setDataConclusao(dataConclusao);
+		   t.setPrioridade(prioridade);
+		   
+		   saveData(t);
+		   return t;
+	   }
+	   finally{
+		   em.close();  
+	   }
+   }
+   
+   public Tarefa updateTarefa(Tarefa tarefa) {
+	   EntityManager em = getEM();
+	   
+	   try {
+		   Tarefa t = em.find(Tarefa.class, tarefa.getTitulo());
+		   
+		   if(t == null) {
+			   saveData(tarefa);
+			   return tarefa;
+		   }
+		   t.setTitulo(tarefa.getTitulo());
+		   t.setDescricao(tarefa.getDescricao());
+		   t.setDataConclusao(tarefa.getDataConclusao());
+		   t.setPrioridade(tarefa.getPrioridade());
+		   return t;
+	   }
+	   finally {
+		   em.close();
+	   }
+   }
+   
+   public Tarefa updateTarefa(String titulo, String descricao, String dataConclusao, String prioridade) {
+	   Tarefa f = em.find(Tarefa.class, titulo);
+	   
+	   if(f == null) {
+		   f = new Tarefa(titulo, descricao, dataConclusao, prioridade);
+		   
+	   }
+	   
+	   f.setTitulo(titulo);
+	   f.setDescricao(descricao);
+	   f.setDataConclusao(dataConclusao);
+	   f.setPrioridade(prioridade);
+	   saveData(f);
+	   return(f);
+   }
 	
-	public Tarefa updateTarefa(String titulo, String descricao, String dataConclusao, String prioridade, List<Tarefa> tarefas) {	
+	/*public Tarefa updateTarefa(String titulo, String descricao, String dataConclusao, String prioridade, List<Tarefa> tarefas) {	
 		Tarefa f = em.find(Tarefa.class, titulo);
 		if (f == null) {
 			f = new Tarefa();
@@ -57,10 +120,10 @@ public class TarefaService {
 		f.setPrioridade(prioridade);
 		f.getTarefas().clear();
 		f.getTarefas().addAll(tarefas);
-		return f;}
+		return f;}*/
 	
 	
-	public Tarefa updateTarefa(String titulo, String descricao, String dataConclusao, String prioridade) {	
+	/*public Tarefa updateTarefa(String titulo, String descricao, String dataConclusao, String prioridade) {	
 		Tarefa f = em.find(Tarefa.class, titulo);
 		if (f == null) {
 			f = new Tarefa();
@@ -71,7 +134,7 @@ public class TarefaService {
 		f.setDataConclusao(dataConclusao);
 		f.setPrioridade(prioridade);
 		f.getTarefas().clear();
-		return f;}
+		return f;}*/
 
 		
 		

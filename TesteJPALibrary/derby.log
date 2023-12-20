@@ -1,11 +1,11 @@
 ----------------------------------------------------------------
-Sun Dec 17 00:55:37 WET 2023:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.16.1.1 - (1901046): instance a816c00e-018c-7545-7b8d-00000ea8f670 
-on database directory C:\aulas23_24\Laboratorios\Catitatfi with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0 
-Loaded from file:/C:/Users/rafae/Downloads/db-derby-10.16.1.1-bin/lib/derby.jar
+Mon Dec 18 17:26:57 WET 2023:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585): instance a816c00e-018c-7df7-713f-0000065a9a00 
+on database directory C:\aulas23_24\Laboratorios\jafunfa1245 with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0 
+Loaded from file:/C:/Users/junta/OneDrive/Ambiente%20de%20Trabalho/TrabalhoLPNovo/ProjetoLP/lib/derby.jar
 java.vendor=Eclipse Adoptium
-java.runtime.version=17.0.7+7
-user.dir=C:\Users\rafae\Downloads\TesteJPALibrary
+java.runtime.version=17.0.9+9
+user.dir=C:\Users\junta\OneDrive\Ambiente de Trabalho\TesteJPALibrary
 os.name=Windows 11
 os.arch=amd64
 os.version=10.0

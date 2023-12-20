@@ -46,27 +46,29 @@ public class UtilizadorService {
 	public Utilizador updateUtilizador(String nome, String email, String password, List<Tarefa> tarefas) {
 		Utilizador u = em.find(Utilizador.class, nome);
 		if(u == null) {
-			u = new Utilizador();
-			em.persist(u);
+			u = new Utilizador(nome, email, password, tarefas);
+			
 		}
 		u.setNome(nome);
 		u.setEmail(email);
 		u.setPassword(password);
 		u.getTarefas().clear();
 		u.getTarefas().addAll(tarefas);
+		saveData(u);
 		return u;
 	}
 	
 	public Utilizador updateUtilizador(String nome, String email, String password) {
 		Utilizador u = em.find(Utilizador.class, nome);
 		if(u == null) {
-			u = new Utilizador();
-			em.persist(u);
+			u = new Utilizador(nome, email, password);
+			
 		}
 		u.setNome(nome);
 		u.setEmail(email);
 		u.setPassword(password);
 		u.getTarefas().clear();
+		saveData(u);
 		return u;
 	}
 	

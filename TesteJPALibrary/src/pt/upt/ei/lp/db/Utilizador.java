@@ -13,7 +13,6 @@ import javax.persistence.OneToMany;
 @Entity
 public class Utilizador {
 	public Utilizador(String nome, String email, String password, List<Tarefa> tarefas) {
-		super();
 		this.nome = nome;
 		this.email = email;
 		this.password = password;

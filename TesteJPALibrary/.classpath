@@ -12,30 +12,10 @@
 			<attribute name="owner.project.facets" value="jst.utility"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/rafae/Downloads/db-derby-10.16.1.1-bin/lib/derby.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/rafae/Downloads/db-derby-10.16.1.1-bin/lib/derbyshared.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/rafae/Downloads/db-derby-10.16.1.1-bin/lib/derbytools.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/rafae/Downloads/eclipselink-2.7.12.v20230209-e5c4074ef3/eclipselink/jlib/jpa/jakarta.persistence_2.2.3.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/rafae/Downloads/eclipselink-2.7.12.v20230209-e5c4074ef3/eclipselink/jlib/eclipselink.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
-		</attributes>
-	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/junta/OneDrive/Ambiente de Trabalho/TrabalhoLPNovo/ProjetoLP/lib/derby.jar"/>
+	<classpathentry kind="lib" path="C:/Users/junta/OneDrive/Ambiente de Trabalho/TrabalhoLPNovo/ProjetoLP/lib/derbyshared.jar"/>
+	<classpathentry kind="lib" path="C:/Users/junta/OneDrive/Ambiente de Trabalho/TrabalhoLPNovo/ProjetoLP/lib/derbytools.jar"/>
+	<classpathentry kind="lib" path="C:/Users/junta/OneDrive/Ambiente de Trabalho/TrabalhoLPNovo/ProjetoLP/lib/eclipselink.jar"/>
+	<classpathentry kind="lib" path="C:/Users/junta/OneDrive/Ambiente de Trabalho/TrabalhoLPNovo/ProjetoLP/lib/jakarta.persistence_2.2.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

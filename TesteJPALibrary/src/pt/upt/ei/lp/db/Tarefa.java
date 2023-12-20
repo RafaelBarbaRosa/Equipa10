@@ -13,13 +13,13 @@ import javax.persistence.OneToMany;
 @Entity
 public class Tarefa {
 	
-	public Tarefa(String titulo, String descricao, String dataConclusao, String prioridade, List<Tarefa> tarefas) {
+	public Tarefa(String titulo, String descricao, String dataConclusao, String prioridade) {
 		super();
 		this.titulo = titulo;
 		this.descricao = descricao;
 		this.dataConclusao = dataConclusao;
 		this.prioridade = prioridade;
-		this.tarefas = tarefas;
+		
 	}
 
 
@@ -31,18 +31,13 @@ public class Tarefa {
 	private String dataConclusao;
 	private String prioridade;
 	
-	@OneToMany(cascade= {CascadeType.ALL},fetch=FetchType.LAZY)
-	List<Tarefa> tarefas = new ArrayList<Tarefa>();
 	
 	public Tarefa() {
 	}
 	
 	
 
-	public Tarefa(String string, String string2, String string3, String string4) {
-		// TODO Auto-generated constructor stub
-	}
-
+	
 
 
 	public String getPrioridade() {
@@ -81,13 +76,7 @@ public class Tarefa {
 		this.dataConclusao = dataConclusao;
 	}
 
-	public List<Tarefa> getTarefas() {
-		return tarefas;
-	}
-
-	public void setTarefas(List<Tarefa> tarefas) {
-		this.tarefas = tarefas;
-	}
+	
 
 
 

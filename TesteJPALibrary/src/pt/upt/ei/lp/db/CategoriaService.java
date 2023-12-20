@@ -81,8 +81,8 @@ public class CategoriaService {
 	}
 	
 	@SuppressWarnings("unchecked")
-		public List<Categoria> findAllCategoria(){
-			Query qd = em.createQuery("Select c from Categoria c");
-			return qd.getResultList();
-		}
+	public List<Categoria> findAllCategoria(){
+		Query qd = em.createQuery("Select c from Categoria c");
+		return qd.getResultList();
+	}
 }
